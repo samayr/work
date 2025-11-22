@@ -32,4 +32,25 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama run devstral-small:24b
 ```
 
-## 
+## Configuration Continue
+
+```
+name: Local Devstral
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Devstral 24B
+    provider: ollama
+    model: devstral:24b
+    roles:
+      - chat
+      - edit
+      - apply
+      - summarize
+
+tabAutocompleteModel:
+  name: Devstral Autocomplete
+  provider: ollama
+  model: devstral:24b
+```
